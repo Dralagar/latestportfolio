@@ -1,0 +1,138 @@
+/* Default styles for all screen sizes */
+.George {
+  width: 538px;
+  height: 200px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+body {
+  color: aqua;
+}
+
+#description {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(236, 229, 229);
+  text-align: justify;
+}
+
+.row {
+  margin: 20px;
+}
+
+.button {
+  color: blue;
+  text-align: justify;
+}
+
+.name {
+  font-size: 40px;
+  font-family: rubik, sans-serif;
+  font-weight: 600;
+  color: rgb(226, 210, 210);
+  text-align: justify;
+}
+
+#work {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: gold;
+  text-align: justify;
+}
+
+#experience {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(245, 234, 234);
+  text-align: justify;
+}
+
+.services {
+  display: flex;
+}
+
+.Skill {
+  background-color: rgb(19, 19, 20);
+  display: flex;
+}
+
+.Skill .Container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.Skill .Skill {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Skill .Skill h3 {
+  color: #333;
+}
+
+.Skill .skilo {
+  margin-top: 15px;
+}
+
+.Skill .skilo ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Skill .skilo li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #555;
+}
+
+.Skill .skilo li:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+.Skill .skilo li:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+.Skill {
+  align-content: justify;
+  align-items: flex-end;
+}
+
+.skilo {
+  display: flex 1fr 1fr auto;
+}
+
+.BG {
+  background-color: #171616;
+}
+
+.column {
+  margin-top: 10px;
+  align-content: space-around;
+  max-width: auto;
+}
+
+.col3 {
+  display: flex;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .George {
+    width: 100%;
+  }
+
+  /* Add other responsive styles for smaller screens as needed */
+}
+
+/* Responsive styles for medium-sized screens */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  /* Add responsive styles for medium-sized screens */
+}
+
+/* Responsive styles for larger screens */
+@media screen and (min-width: 1201px) {
+  /* Add responsive styles for larger screens */
+}

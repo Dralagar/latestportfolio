@@ -1,0 +1,33 @@
+.Nav {
+  background-color: rgb(28, 28, 20);
+  padding: 10px;
+  animation: backwards;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(241, 241, 250);
+  text-wrap: 10px;
+}
+
+.Logos {
+  align-items: center;
+  text-decoration: none;
+  color: whitesmoke;
+  display: flex;
+}
+
+.logo_image {
+  height: 80px;
+  width: 100px;
+  transition: all;
+  transform: matrix3d();
+}
+.nav {
+  justify-content: space-evenly;
+}
+a {
+  padding: 10px;
+}
