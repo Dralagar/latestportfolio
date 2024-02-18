@@ -7,6 +7,7 @@ import Home from "./Components/Home.jsx";
 import Portfolio from "./Components/Portfolio.jsx";
 import Footer from "./Components/Footer.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./Components/Styles/App.css"
 
 function App() {
   return (

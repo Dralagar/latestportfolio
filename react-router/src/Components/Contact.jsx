@@ -1,9 +1,33 @@
+import React, { useState, useEffect } from "react";
+
 import "./Styles/Contact.css";
 
 function Contact() {
+  const [submitted, setSubmitted] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      // Simulating a form submission delay (replace with your actual API request)
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+
+      // After successful submission
+      setSubmitted(true);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
+
+  useEffect(() => {
+    // Additional logic can be added after form submission if needed
+    // This useEffect runs whenever the 'submitted' state changes
+  }, [submitted]);
+
   return (
-    <div className="BG">
-      <div className="container mt-5">
+    <>
+      <div className="BG">
         <div className="card">
           <div className="card-body">
             <h1 className="card-title">Contact</h1>
@@ -13,6 +37,7 @@ function Contact() {
             <form
               action="https://formsubmit.co/8c1334f955f21f81b0a2bf6d1a1d526e"
               method="POST"
+              onSubmit={handleSubmit}
             >
               <div className="row mb-3">
                 <div className="col-md-6">
@@ -42,6 +67,7 @@ function Contact() {
                   />
                 </div>
               </div>
+
               <div className="row mb-3">
                 <div className="col-md-6">
                   <label htmlFor="email" className="form-label">
@@ -52,7 +78,7 @@ function Contact() {
                     className="form-control"
                     id="email"
                     name="email"
-                    placeholder="george@example.com"
+                    placeholder="dev@example.com"
                     required
                   />
                 </div>
@@ -65,11 +91,12 @@ function Contact() {
                     className="form-control"
                     id="phone"
                     name="phone"
-                    placeholder="0783474795"
+                    placeholder="0742972922"
                     required
                   />
                 </div>
               </div>
+
               <div className="mb-3">
                 <label htmlFor="message" className="form-label">
                   Message
@@ -82,20 +109,15 @@ function Contact() {
                   required
                 ></textarea>
               </div>
+
               <button type="submit" className="btn btn-primary">
                 Submit
               </button>
-              <input
-                type="hidden"
-                name="_next"
-                value="https://yourdomain.co/thanks.html"
-              />
-              <input type="hidden" name="_captcha" value="false" />
             </form>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

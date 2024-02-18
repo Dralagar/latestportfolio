@@ -1,59 +1,59 @@
 import React from "react";
-import { Card, Container, Row, Col } from "react-bootstrap";
 import rhinoImage from "./Styles/rhino (1).jpeg";
-import dralagarImage from "../assets/Dralagar.jpeg";
 import yeiImage from "../assets/YEI.jpg";
-import georgeImage from "../assets/George.jpg";
+import "./Styles/Portfolio.css";
 
 function Portfolio() {
   return (
-    <div className="backgr">
-      <h1 className="p">Projects</h1>
-      <p className="h">Check out my latest projects!</p>
+    <Container>
+      <Row className="project-container">
+        {/* Project 1 */}
+        <Col lg={4} md={6} sm={12}>
+          <Card className="project-card">
+            <Card.Img
+              variant="top"
+              src={rhinoImage}
+              alt="Kumbatia Afrika Festival"
+            />
+            <Card.Body>
+              <Card.Title>Kumbatia Afrika Festival</Card.Title>
+              <Card.Text>
+                A description of the Kumbatia Afrika Festival project. Include
+                information about the goals, technologies used, and your role.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
 
-      <Card>
-        <div className="container">
-          <Row>
-            <Col md={3}>
-              <Card>
-                <h5>Project One</h5>
-                <Card.Img variant="top" src={dralagarImage} />
-                <Card.Body>
-                  <Card.Link href="one">Project One Details</Card.Link>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={3}>
-              <Card>
-                <h5>Project Two</h5>
-                <Card.Img variant="top" src={yeiImage} />
-                <Card.Body>
-                  <Card.Link href="orj">Project Two Details</Card.Link>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={3}>
-              <Card>
-                <h5>Project Three</h5>
-                <Card.Img variant="top" src={georgeImage} />
-                <Card.Body>
-                  <Card.Link href="poeh">Project Three Details</Card.Link>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={3}>
-              <Card>
-                <h5>Project Three</h5>
-                <Card.Img variant="top" src={georgeImage} />
-                <Card.Body>
-                  <Card.Link href="poeh">Project Three Details</Card.Link>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </div>
-      </Card>
-    </div>
+        {/* Project 2 */}
+        <Col lg={4} md={6} sm={12}>
+          <Card className="project-card">
+            <Card.Img variant="top" src={yeiImage} alt="Youth Echo Impact" />
+            <Card.Body>
+              <Card.Title>Youth Echo Impact</Card.Title>
+              <Card.Text>
+                A description of the Youth Echo Impact project. Include
+                information about the goals, technologies used, and your role.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+
+        {/* Project 3 */}
+        <Col lg={4} md={6} sm={12}>
+          <Card className="project-card">
+            <Card.Img variant="top" src={rhinoImage} alt="AI Prompt" />
+            <Card.Body>
+              <Card.Title>AI Prompt</Card.Title>
+              <Card.Text>
+                A description of the AI Prompt project. Include information
+                about the goals, technologies used, and your role.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
