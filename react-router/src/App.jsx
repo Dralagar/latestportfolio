@@ -15,7 +15,7 @@ function App() {
       <BrowserRouter>
         <NavBar />
 
-        <Route path="/Home">
+        <Route path="/">
           <Home />
         </Route>
         <Route path="/Portfolio">

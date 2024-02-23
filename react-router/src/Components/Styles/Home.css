@@ -1,76 +1,88 @@
-/*****************************
-           Home Page
-*****************************/
+/* Home Page Styles */
 .description {
   font-size: 16px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   text-align: justify;
 }
-.row {
-  margin: 20px;
-}
 
-.button {
-  color: blue;
-  text-align: justify;
-}
 .name {
-  font-size: 60;
+  font-size: 60px; /* Add 'px' unit */
   font-family: rubik, sans-serif;
   font-weight: 600;
   color: white;
   text-align: justify;
 }
+
 .work {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: gold;
   text-align: justify;
 }
+
 .experience {
   font-size: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   text-align: justify;
 }
-.skillo {
-  padding: 20px;
+
+/* Additional Styles */
+.about {
+  padding: 0;
 }
+
 .uti {
   display: flex;
 }
-.about {
-  padding: 0%;
-}
+
 .BG {
   background-color: black;
   padding: inherit;
 }
-.Card {
-  height: 200px;
-  width: auto;
-}
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh; /* Set the container height to the full viewport height */
-}
 
-/* Dark black background color for the card body */
 .card-body {
   background-color: #000;
-  color: #c0c0c0; /* Silver text color */
+  color: #fff; /* Change to white text color */
 }
 
-/* Dark navy background color for the card */
 .card {
   background-color: #000;
-  color: #c0c0c0; /* Silver text color */
+  color: #fff; /* Change to white text color */
 }
 
-/* Dark black background color for the button */
 .btn-primary {
   background-color: #000;
-  border-color: #000;
+  border-color: #fff; /* Change to white border color */
+  color: #fff; /* Change to white text color */
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Set body text color to white for all elements */
+.home,
+.about,
+.skill,
+.card-body {
+  color: white;
 }

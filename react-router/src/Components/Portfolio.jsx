@@ -1,4 +1,5 @@
 import React from "react";
+import { Container, Row, Col, Card } from "react-bootstrap"; // Import necessary components from react-bootstrap
 import rhinoImage from "./Styles/rhino (1).jpeg";
 import yeiImage from "../assets/YEI.jpg";
 import "./Styles/Portfolio.css";
