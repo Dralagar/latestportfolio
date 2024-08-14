@@ -1,0 +1,51 @@
+/* Contact.css */
+
+/* Card Styling */
+.card {
+  background-color: #3E2723; /* Rich, dark brown background for the card */
+  color: #ECEFF1; /* Light silver text color for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Card Body Styling */
+.card-body {
+  background-color: #455A64; /* Muted, dark blue-grey background */
+  color: #F5F5F5; /* Soft white text color */
+  border-radius: 8px;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #8D6E63; /* Warm brown color */
+  border-color: #5D4037; /* Slightly darker border for depth */
+  color: #FFFFFF; /* White text color for readability */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.btn-primary:hover {
+  background-color: #795548; /* Slightly darker on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.btn-primary:disabled {
+  background-color: #A1887F; /* Desaturated color when disabled */
+  cursor: not-allowed;
+}
+
+/* Input Field Styling */
+.form-control {
+  border-radius: 4px;
+  border: 1px solid #B0BEC5; /* Light grey border */
+  background-color: #ECEFF1; /* Very light grey background */
+  color: #263238; /* Dark text color for contrast */
+}
+
+.form-control:focus {
+  border-color: #8D6E63; /* Focus state color matches button */
+  box-shadow: 0 0 5px rgba(141, 110, 99, 0.5); /* Subtle shadow on focus */
+}

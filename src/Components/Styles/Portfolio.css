@@ -1,0 +1,50 @@
+/* Portfolio.css */
+
+.backgr {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  background-color: #283747; /* Dark Blue background */
+  color: #ffffff; /* White text color */
+}
+
+.project-container {
+  margin-top: 20px;
+}
+
+.project-card {
+  margin-bottom: 20px;
+  border: 1px solid #34495e; /* Dark Gray border */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+}
+
+.project-card h5 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.project-card-body {
+  padding: 20px;
+}
+
+/* Responsive styles for cards */
+@media (max-width: 767px) {
+  .backgr {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .project-container {
+    margin-top: 10px;
+  }
+
+  .project-card {
+    margin-bottom: 10px;
+  }
+}

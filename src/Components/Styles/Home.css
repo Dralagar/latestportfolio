@@ -1,0 +1,153 @@
+/* Home.css */
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #dee2e7;
+  background-color: #051b30;
+}
+
+/* Background styles */
+.BG {
+  background-color: #0a0a0b;
+}
+
+/* Container styles */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #051b30;
+}
+
+/* Home section */
+.home-container {
+  /*background-color: #040d15;*/
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  margin-top: auto;
+}
+
+.hello-img {
+  width: 60px;
+  height: auto;
+  color: #dee2e7;
+  border-radius: 2px;
+}
+
+.name {
+  font-size: 32px; /* Increased font size for name */
+  margin-bottom: 10px;
+  color: #e0e0f3;
+}
+
+#work {
+  font-size: 20px; /* Increased font size for work title */
+  margin-bottom: 20px;
+  color: gold;
+}
+
+#experience {
+  font-size: 16px; /* Increased font size for experience */
+  line-height: 1.6; /* Adjusted line height for better readability */
+  color: #e0e0f3;
+}
+
+/* About section */
+.about-container {
+  background-color: #000;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+.about h2 {
+  font-size: 28px; /* Increased font size for section title */
+  margin-bottom: 20px;
+  color: #fff; /* Changed text color to white */
+}
+
+.about p {
+  font-size: 18px; /* Increased font size for paragraph */
+  line-height: 1.6; /* Adjusted line height for better readability */
+  color: #e0e0f3;
+}
+
+/* Skills section */
+.skill-container {
+  background-color: #000;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+.ut {
+  font-size: 24px; /* Increased font size for section title */
+  color: #fff; /* Changed text color to white */
+}
+
+.uti {
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+}
+
+.uti.hovered {
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+}
+
+.skill-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skill-list li {
+  display: inline-block;
+  margin-right: 20px; /* Increased margin between skills */
+  font-size: 18px; /* Increased font size for skills */
+  color: #e0e0f3;
+}
+
+.skill-list li img {
+  width: 24px; /* Increased size of icons */
+  height: auto;
+  margin-left: 5px; /* Adjusted icon margin */
+}
+
+/* Contact section */
+.contact-container {
+  background-color: rgb(24, 24, 25);
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+.contact h2 {
+  font-size: 28px; /* Increased font size for section title */
+  margin-bottom: 20px;
+  color: #dee2e7;
+}
+
+.contact p {
+  font-size: 18px; /* Increased font size for paragraph */
+  margin-bottom: 20px;
+  color: #dee2e7;
+}
+
+.contact-form {
+  max-width: 90%;
+  color: #dee2e7;
+}

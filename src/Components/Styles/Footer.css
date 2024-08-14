@@ -1,0 +1,43 @@
+.footerCon {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #e9ecef;
+  position: relative;
+  width: 100%; /* Ensure the footer takes the full width */
+  overflow: hidden; /* Ensure overflow is hidden to keep layout clean */
+}
+
+.footerSocials {
+  display: flex;
+  justify-content: center; /* Center the logos horizontally */
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footerSocials a {
+  display: inline-block;
+}
+
+.social-logo {
+  width: 40px; /* Standard size for all logos */
+  height: 40px; /* Standard size for all logos */
+  filter: grayscale(100%);
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.social-logo:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.footerCon p {
+  font-size: 14px;
+  color: #374b5c;
+  margin: 0;
+  padding-top: 10px;
+}
+
+
+

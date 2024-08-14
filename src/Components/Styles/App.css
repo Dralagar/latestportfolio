@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif; /* Applies a global font */
+}
+
+.background {
+  background-color: rgb(1, 5, 15); /* Dark background for any element using this class */
+}
+
+.text-color {
+  color: #635d5d; /* Default text color for any element using this class */
+}

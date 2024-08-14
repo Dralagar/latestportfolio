@@ -1,0 +1,107 @@
+/* Global Styles */
+.cvbody {
+  margin: 10;
+  padding: 0;
+  background-color: #283747; /* Dark Blue background */
+  color: #ffffff; /* White text color */
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-color: #727476; /* Dark Blue container background */
+  color: #ffffff; /* White text color */
+  padding: 20px;
+  margin: 20px auto; /* Centering the container */
+  max-width: 800px;
+  border-radius: 5px; /* Added border radius for aesthetics */
+}
+
+.paper-background {
+  background-color: #9ea1a3; /* Darker Blue paper background */
+  border: 1px solid #34495e; /* Dark Gray border */
+  padding: 20px;
+  border-radius: 5px; /* Added border radius for aesthetics */
+}
+
+/* Contact.css */
+.card {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #283747; /* Dark Blue card background */
+  color: #ffffff; /* White text color */
+  padding: 20px;
+  border-radius: 5px; /* Added border radius for aesthetics */
+}
+
+.card-body {
+  text-align: center;
+  color: #ffffff; /* White text color */
+}
+
+.form-control {
+  margin-bottom: 10px;
+  color: #ffffff; /* White text color */
+}
+
+#black {
+  background-color: #283747; /* Dark Blue background */
+  color: #ffffff; /* White text color */
+  padding: 20px;
+  overflow-y: scroll;
+  height: calc(100vh - 40px);
+}
+
+/* Media Queries */
+@media screen and (max-width: 799px) {
+  #info .left,
+  #info .right,
+  section .right {
+    text-align: center;
+  }
+
+  section .right {
+    margin: 20px;
+  }
+
+  section h3 {
+    font-weight: bold;
+  }
+  
+  /* New CSS for Job Description section */
+  .work-item {
+    display: block;
+    color: #ffffff; /* White text color */
+  }
+
+  .work-item p {
+    margin-top: 10px; /* Add margin between paragraphs */
+    color: #ffffff; /* White text color */
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+  }
+}
+
+/* Additional Styles */
+.left h3 {
+  margin-top: 10px;
+}
+
+.work-item {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.work-item p {
+  grid-area: 2 / 1 / 3 / 3;
+  color: #ffffff; /* White text color */
+}
