@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import navbrand from "../src/assets/Dralagarlogo.png";
 import "./Components/Styles/NavBar.css";
 
 function NavBar() {
@@ -19,7 +20,7 @@ function NavBar() {
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
           <Link to="/" className="navbar-brand">
-            Dralagar.
+            <img src={navbrand} alt="Mylogo" />
           </Link>
           <button
             className="navbar-toggler"
@@ -29,9 +30,16 @@ function NavBar() {
             aria-label="Toggle navigation"
             onClick={toggleBreadcrumb}
           >
-            {isBreadcrumbVisible ? "X" : <span className="navbar-toggler-icon"></span>}
+            {isBreadcrumbVisible ? (
+              <span className="close-nav">X</span>
+            ) : (
+              <span className="navbar-toggler-icon"></span>
+            )}
           </button>
-          <div className={`collapse navbar-collapse ${isBreadcrumbVisible ? "show" : ""}`} id="navbarNav">
+          <div
+            className={`collapse navbar-collapse ${isBreadcrumbVisible ? "show" : ""}`}
+            id="navbarNav"
+          >
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <Link to="/" className={isActive("/")}>
@@ -70,4 +78,3 @@ function NavBar() {
 }
 
 export default NavBar;
-

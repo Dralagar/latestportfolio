@@ -1,43 +1,113 @@
+/* Footer Container */
 .footerCon {
-  background-color: #f8f9fa;
-  padding: 20px;
+  background-color: #1A3636;
+  color: #D6BD98;
+  padding: 30px;
   text-align: center;
-  border-top: 1px solid #e9ecef;
-  position: relative;
-  width: 100%; /* Ensure the footer takes the full width */
-  overflow: hidden; /* Ensure overflow is hidden to keep layout clean */
+  font-family: Arial, sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.newsletter-section,
+.quick-links-section {
+  flex: 1;
+  margin: 0 15px;
+}
+
+.newsletter-section h5,
+.quick-links-section h5 {
+  color: #D6BD98;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.quick-links-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-links-list li {
+  margin: 8px 0;
+}
+
+.quick-links-list a {
+  color: #D6BD98;
+  text-decoration: none;
+}
+
+.quick-links-list a:hover {
+  text-decoration: underline;
 }
 
 .footerSocials {
+  margin: 25px 0;
   display: flex;
-  justify-content: center; /* Center the logos horizontally */
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 20px;
+  justify-content: center;
 }
 
 .footerSocials a {
-  display: inline-block;
+  margin: 0 10px;
 }
 
 .social-logo {
-  width: 40px; /* Standard size for all logos */
-  height: 40px; /* Standard size for all logos */
-  filter: grayscale(100%);
-  transition: filter 0.3s, transform 0.3s;
+  width: 35px;
+  height: 35px;
+  transition: transform 0.2s ease-in-out;
 }
 
 .social-logo:hover {
-  filter: grayscale(0%);
   transform: scale(1.1);
 }
 
-.footerCon p {
+.footer-bottom {
+  border-top: 1px solid #677D6A;
+  padding-top: 15px;
+  margin-top: 30px;
   font-size: 14px;
-  color: #374b5c;
-  margin: 0;
-  padding-top: 10px;
 }
 
+.footer-policies-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+}
 
+.footer-policies-list li {
+  margin: 0 15px;
+}
 
+.footer-policies-list a {
+  color: #D6BD98;
+  text-decoration: none;
+}
+
+.footer-policies-list a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .newsletter-section,
+  .quick-links-section {
+    margin-bottom: 20px;
+  }
+}

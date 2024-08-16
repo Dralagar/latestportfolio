@@ -1,13 +1,20 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Arial", sans-serif; /* Applies a global font */
+/* Override global background and text-color styles */
+.container-primary {
+  background-color: #050505; /* First color */
+  color: #11100f; /* Contrasting light color for text */
 }
 
-.background {
-  background-color: rgb(1, 5, 15); /* Dark background for any element using this class */
+.container-secondary {
+  background-color: #3C5B6F; /* Second color */
+  color: #DFD0B8; /* Light color for readability */
 }
 
-.text-color {
-  color: #635d5d; /* Default text color for any element using this class */
+.container-tertiary {
+  background-color: #948979; /* Third color */
+  color: #1A3636; /* Darker text color for contrast */
+}
+
+.container-quaternary {
+  background-color: #DFD0B8; /* Fourth color */
+  color: #1A3636; /* Darker text color */
 }

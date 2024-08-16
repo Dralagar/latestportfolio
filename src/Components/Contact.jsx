@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Styles/Contact.css";
 
 function Contact() {
@@ -25,12 +25,8 @@ function Contact() {
     }
   };
 
-  useEffect(() => {
-    // Logic after form submission if needed
-  }, [submitted]);
-
   return (
-    <div className="container">
+    <div className="contact-container">
       <div className="card">
         <div className="card-body">
           <h1 className="card-title">Contact</h1>

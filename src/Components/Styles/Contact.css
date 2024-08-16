@@ -1,51 +1,102 @@
 /* Contact.css */
 
-/* Card Styling */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 15px;
+  background-color: #11082c27;
+  min-height: calc(100vh - 70px); /* Adjust based on navbar height */
+}
+
 .card {
-  background-color: #3E2723; /* Rich, dark brown background for the card */
-  color: #ECEFF1; /* Light silver text color for contrast */
+  max-width: 800px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   padding: 20px;
-  margin-top: 20px;
 }
 
-/* Card Body Styling */
 .card-body {
-  background-color: #455A64; /* Muted, dark blue-grey background */
-  color: #F5F5F5; /* Soft white text color */
-  border-radius: 8px;
+  padding: 20px;
 }
 
-/* Button Styling */
-.btn-primary {
-  background-color: #8D6E63; /* Warm brown color */
-  border-color: #5D4037; /* Slightly darker border for depth */
-  color: #FFFFFF; /* White text color for readability */
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+.card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #153448; /* Primary heading color */
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.btn-primary:hover {
-  background-color: #795548; /* Slightly darker on hover */
-  transform: translateY(-2px); /* Lift effect on hover */
+.card-text {
+  font-size: 1.1rem;
+  color: #3C5B6F; /* Secondary text color */
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-.btn-primary:disabled {
-  background-color: #A1887F; /* Desaturated color when disabled */
-  cursor: not-allowed;
+.form-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #153448; /* Label color */
 }
 
-/* Input Field Styling */
 .form-control {
+  border: 1px solid #948979;
   border-radius: 4px;
-  border: 1px solid #B0BEC5; /* Light grey border */
-  background-color: #ECEFF1; /* Very light grey background */
-  color: #263238; /* Dark text color for contrast */
+  padding: 10px;
+  font-size: 1rem;
+  color: #3C5B6F;
 }
 
 .form-control:focus {
-  border-color: #8D6E63; /* Focus state color matches button */
-  box-shadow: 0 0 5px rgba(141, 110, 99, 0.5); /* Subtle shadow on focus */
+  border-color: #153448;
+  box-shadow: 0 0 5px rgba(21, 52, 72, 0.2);
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+.btn-primary {
+  background-color: #153448;
+  border-color: #153448;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #3C5B6F;
+  border-color: #3C5B6F;
+}
+
+.btn-primary:disabled {
+  background-color: #948979;
+  border-color: #948979;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.75rem;
+  }
+
+  .form-control {
+    padding: 8px;
+    font-size: 0.95rem;
+  }
+
+  .btn-primary {
+    padding: 8px 16px;
+    font-size: 0.95rem;
+  }
 }
